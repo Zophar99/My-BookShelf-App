@@ -7,3 +7,7 @@ The application is built with HTML, CSS, and JavaScript and uses json-server to 
 2. View a list of books stored in the database.
 3. Remove a book from the list.
 4. Simple, user friendly and visually appealing interface.
+#### How it works
+- click on 'show books' to load and display the correct of books from the backend (db.json)
+- use the form to 'add a new book' (title & author). The new book is stored and displayed immediately
+- Each book in the list has a 'remote' button to delete it from the list and from the database.
