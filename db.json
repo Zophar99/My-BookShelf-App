@@ -1,0 +1,54 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Kidagaa Kimemwozea",
+      "author": "Ken Walibora"
+    },
+    {
+      "id": "2",
+      "title": "Mstahiki Meya",
+      "author": "Timothy Arege"
+    },
+    {
+      "id": "3",
+      "title": "Betrayal in the City",
+      "author": "Francis Imbuga"
+    },
+    {
+      "id": "4",
+      "title": "The River and the Source",
+      "author": "Margaret Ogola"
+    },
+    {
+      "id": "5",
+      "title": "The River Between",
+      "author": "Ngũgĩ wa Thiong'o"
+    },
+    {
+      "id": "6",
+      "title": "Things Fall Apart",
+      "author": "Chinua Achebe"
+    },
+    {
+      "id": "7",
+      "title": "Houseboy",
+      "author": "Ferdinand Oyono"
+    },
+    {
+      "id": "8",
+      "title": "Petals of Blood",
+      "author": "Ngũgĩ wa Thiong'o"
+    },
+    {
+      "id": "9",
+      "title": "Devil on the Cross",
+      "author": "Ngũgĩ wa Thiong'o"
+    },
+    {
+      "id": "10",
+      "title": "Song of Lawino",
+      "author": "Okot p'Bitek"
+    }
+  ]
+}
