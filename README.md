@@ -24,3 +24,9 @@ The application is built with HTML, CSS, and JavaScript and uses json-server to 
 1. Install 'json-server' - (if not installed)
 2. Create a db.json file
 3. Start the json-server
+
+###### Usage 
+- Open index.html in your browser
+- Click show books to see the list of books
+- Use the form to add new books
+- Click remove to delete a book
