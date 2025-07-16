@@ -33,3 +33,6 @@ The application is built with HTML, CSS, and JavaScript and uses json-server to 
 
 ###### Author
 Nyakundi Zophar
+
+###### License
+MIT License
