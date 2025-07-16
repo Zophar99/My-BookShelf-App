@@ -19,3 +19,8 @@ The application is built with HTML, CSS, and JavaScript and uses json-server to 
 - CSS
 - Javascript (DOM manipulation, Fetch API)
 - json-server 
+
+###### Project Setup
+1. Install 'json-server' - (if not installed)
+2. Create a db.json file
+3. Start the json-server
