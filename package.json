@@ -1,0 +1,22 @@
+{
+  "name": "my-bookshelf-app",
+  "version": "1.0.0",
+  "description": "A simple web application to add, view, and remove books. Built with HTML, CSS, JavaScript and json-server.",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zophar99/My-BookShelf-App.git"
+  },
+  "author": "Nyakundi Zophar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Zophar99/My-BookShelf-App/issues"
+  },
+  "homepage": "https://github.com/Zophar99/My-BookShelf-App#readme",
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
