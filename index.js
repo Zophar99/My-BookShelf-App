@@ -74,5 +74,18 @@ ocument.addEventListener('DOMContentLoaded', () => {
       bookList.appendChild(li);
     });
   }
+//Remove a book by ID from json-server and local list
+  
+  function removeBook(id) {
+    fetch(`http://localhost:3000/books/${id}`, {
+      method: 'DELETE'
+    })
+      .then(() => {
+        books = books.filter(book => book.id !== id);
+        renderBooks();
+      })
+      .catch(error => console.error('Error deleting book:', error));
+  }
+});
 
 
