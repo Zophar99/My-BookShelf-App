@@ -55,4 +55,13 @@ ocument.addEventListener('DOMContentLoaded', () => {
       alert('Please fill in both the title and author');
     }
   });
+// Render the books to the DOM
+   
+  function renderBooks() {
+    bookList.innerHTML = ''; // Clear current list
+
+    books.forEach(book => {
+      const li = document.createElement('li');
+      li.textContent = `${book.title} by ${book.author}`;
+
 
