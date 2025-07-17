@@ -35,4 +35,5 @@ ocument.addEventListener('DOMContentLoaded', () => {
         }
       });
       const nextId = maxId + 1;
-
+// Create new book object with numeric ID
+      const newBook = { id: nextId, title, author };
