@@ -7,3 +7,14 @@ ocument.addEventListener('DOMContentLoaded', () => {
   const showBooksBtn = document.getElementById('show-books-btn');
  // Local list to store books
   let books = [];
+//Fetch books from json-server and display them only when user clicks "Show Books"
+   
+  showBooksBtn.addEventListener('click', () => {
+    fetch('http://localhost:3000/books')
+      .then(response => response.json())
+      .then(data => {
+        books = data;
+        renderBooks();
+      })
+      .catch(error => console.error('Error fetching books:', error));
+  });
