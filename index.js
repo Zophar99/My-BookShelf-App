@@ -5,3 +5,5 @@ ocument.addEventListener('DOMContentLoaded', () => {
   const authorInput = document.getElementById('author');
   const bookList = document.getElementById('book-list');
   const showBooksBtn = document.getElementById('show-books-btn');
+ // Local list to store books
+  let books = [];
