@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
    //Fetch books from json-server and display them only when user clicks "Show Books"
    
   showBooksBtn.addEventListener('click', () => {
-    fetch('http://localhost:3000/books')
+    fetch('https://my-bookshelf-app-j6wp.onrender.com/books')
       .then(response => response.json())
       .then(data => {
         books = data;
@@ -47,8 +47,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const newBook = { id: nextId, title, author };
 
       // Send POST request to json-server
-      fetch('http://localhost:3000/books', {
-        method: 'POST',
+      fetch('https://my-bookshelf-app-j6wp.onrender.com/books', {
+  method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(newBook)
       })
@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
    //Remove a book by ID from json-server and local list
   
   function removeBook(id) {
-    fetch(`http://localhost:3000/books/${id}`, {
-      method: 'DELETE'
+    fetch(`https://my-bookshelf-app-j6wp.onrender.com/books/${id}`, {
+  method: 'DELETE'
     })
       .then(() => {
         books = books.filter(book => book.id !== id);
