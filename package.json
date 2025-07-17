@@ -4,7 +4,8 @@
   "description": "This is a simple web application that lets users add books...",
   "main": "index.js",
   "scripts": {
-  "start": "cross-env PORT=${PORT} json-server --watch db.json --port $PORT"
+  "start": "cross-env PORT=${PORT} json-server --watch db.json --host 0.0.0.0 --port $PORT"
+
 },
 "dependencies": {
   "json-server": "^0.17.4",
