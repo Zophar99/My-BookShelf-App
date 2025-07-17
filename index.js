@@ -27,3 +27,12 @@ ocument.addEventListener('DOMContentLoaded', () => {
     const author = authorInput.value.trim();
 
     if (title && author) {
+ // Find the current highest ID to set next ID
+      let maxId = 0;
+      books.forEach(book => {
+        if (Number(book.id) > maxId) {
+          maxId = Number(book.id);
+        }
+      });
+      const nextId = maxId + 1;
+
