@@ -63,5 +63,16 @@ ocument.addEventListener('DOMContentLoaded', () => {
     books.forEach(book => {
       const li = document.createElement('li');
       li.textContent = `${book.title} by ${book.author}`;
+// Create remove button
+      const removeBtn = document.createElement('button');
+      removeBtn.textContent = 'Remove';
+      removeBtn.addEventListener('click', () => {
+        removeBook(book.id);
+      });
+
+      li.appendChild(removeBtn);
+      bookList.appendChild(li);
+    });
+  }
 
 
