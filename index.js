@@ -37,3 +37,22 @@ ocument.addEventListener('DOMContentLoaded', () => {
       const nextId = maxId + 1;
 // Create new book object with numeric ID
       const newBook = { id: nextId, title, author };
+      // Send POST request to json-server
+      fetch('http://localhost:3000/books', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newBook)
+      })
+        .then(response => response.json())
+        .then(addedBook => {
+          books.push(addedBook);    // Add to local list
+          renderBooks();            // Re-render list
+          titleInput.value = '';    // Clear form fields
+          authorInput.value = '';
+        })
+        .catch(error => console.error('Error adding book:', error));
+    } else {
+      alert('Please fill in both the title and author');
+    }
+  });
+
