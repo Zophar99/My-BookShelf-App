@@ -18,3 +18,12 @@ ocument.addEventListener('DOMContentLoaded', () => {
       })
       .catch(error => console.error('Error fetching books:', error));
   });
+// Handle adding a new book when form is submitted
+  
+  bookForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent page reload
+
+    const title = titleInput.value.trim();
+    const author = authorInput.value.trim();
+
+    if (title && author) {
