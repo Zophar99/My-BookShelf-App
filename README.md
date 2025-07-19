@@ -9,8 +9,8 @@ The application is built with HTML, CSS, and JavaScript and uses json-server to 
 3. Remove a book from the list.
 4. Simple, user friendly and visually appealing interface.
 
-## Live Demo
-[View Live on Render](https://my-bookshelf-app-j6wp.onrender.com)
+## Live Frontend
+[View on GitHub Pages](https://zophar99.github.io/My-BookShelf-App/)
 
 ## How it works
 - click on 'show books' to load and display the list of books from the backend (db.json)
